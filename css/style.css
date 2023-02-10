@@ -1,0 +1,220 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+address {
+  font-style: normal;
+}
+:root {
+  --color-special-light: #ffffff;
+  --main-bg-color: #2f303a;
+  --secondary-bg-color: #f4f4fd;
+  --footer-nav-color: #2e2f42;
+  --footer-text: #e7e9fc;
+  --logo-iris: #4d5ae5;
+  --contacts-color: #434455;
+  --accent-button: #404bbf;
+}
+body {
+  background-color: var(--color-special-light);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--contacts-color);
+}
+
+/* ---------------- header -------------------------------------- */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-iris);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--footer-nav-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contacts-link {
+  text-decoration: none;
+  list-style: none;
+  color: var(--contacts-color);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contacts-link:is(:hover, :focus) {
+  color: var(--accent-button);
+}
+.nav-link {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--footer-nav-color);
+}
+.nav-link:is(:hover, :focus) {
+  color: var(--accent-button);
+}
+
+/* ---------------footer------------- */
+
+.footer {
+  text-decoration: none;
+  background: var(--footer-nav-color);
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-special-light);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text);
+}
+
+/* --------------- gallery ----------- */
+
+.filter-list {
+  list-style: none;
+  text-decoration: none;
+}
+.filter-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  border: none;
+  padding: 12px 24px;
+}
+.filter-btn:is(:hover, :focus) {
+  background: var(--accent-button);
+  color: var(--color-special-light);
+}
+.gallery-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--footer-nav-color);
+}
+.gallery-list-filrt {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--contacts-color);
+}
+
+/* -------------------------- Hero ------------------------------------ */
+
+.hero {
+  background: var(--footer-nav-color);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-special-light);
+}
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.04em;
+  color: var(--color-special-light);
+  background: var(--logo-iris);
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+}
+.hero-btn:is(:hover, :focus) {
+  color: var(--color-special-light);
+  background: var(--accent-button);
+}
+
+/* ---------- features -------------- */
+
+.features-item {
+  list-style: none;
+}
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--footer-nav-color);
+}
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--contacts-color);
+}
+
+/* ------------ services ----------- */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--footer-nav-color);
+}
+.services-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*------------------ team ------------*/
+
+.team {
+  background: var(--secondary-bg-color);
+}
+.team-list {
+  text-decoration: none;
+  list-style: none;
+}
+.team-names {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--footer-nav-color);
+}
+.team-prof {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
