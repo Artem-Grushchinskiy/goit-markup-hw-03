@@ -27,18 +27,22 @@ address {
 body {
   background-color: var(--color-special-light);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
 }
 
 /* ---------------- header -------------------------------------- */
-
+.container {
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 18px;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--logo-iris);
   text-transform: uppercase;
@@ -47,17 +51,18 @@ body {
 .logo-text {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 18px;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--footer-nav-color);
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.contacts {
+  list-style: none;
+}
 .contacts-link {
   text-decoration: none;
-  list-style: none;
   color: var(--contacts-color);
   font-weight: 400;
   line-height: 1.5;
@@ -65,8 +70,10 @@ body {
 .contacts-link:is(:hover, :focus) {
   color: var(--accent-button);
 }
-.nav-link {
+.header-list {
   list-style: none;
+}
+.nav-link {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -86,8 +93,8 @@ body {
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 18px;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--color-special-light);
   text-transform: uppercase;
@@ -115,11 +122,15 @@ body {
   color: #4d5ae5;
   background: #f4f4fd;
   border: none;
+  border-radius: 4px;
   padding: 12px 24px;
 }
 .filter-btn:is(:hover, :focus) {
   background: var(--accent-button);
   color: var(--color-special-light);
+}
+.gallery-list {
+  list-style: none;
 }
 .gallery-title {
   font-weight: 500;
@@ -128,7 +139,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--footer-nav-color);
 }
-.gallery-list-filrt {
+.gallery-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
