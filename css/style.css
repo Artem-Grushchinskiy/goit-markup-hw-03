@@ -33,6 +33,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--contacts-color);
 }
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid green;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* ---------------- header -------------------------------------- */
 
@@ -42,12 +53,15 @@ body {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid green;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
 }
 
 .logo {
@@ -71,25 +85,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.contacts {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.contacts-link {
-  text-decoration: none;
-  color: var(--contacts-color);
-  font-weight: 400;
-  line-height: 1.5;
-}
-.contacts-number {
-  margin-right: 40px;
-}
-
-.contacts-link:is(:hover, :focus) {
-  color: var(--accent-button);
-}
 .header-list {
   list-style: none;
   display: flex;
@@ -106,16 +101,24 @@ body {
 .nav-link:is(:hover, :focus) {
   color: var(--accent-button);
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: auto;
-}
-.header-container {
+.contacts {
+  list-style: none;
   display: flex;
   align-items: center;
 }
+.contacts-link {
+  text-decoration: none;
+  color: var(--contacts-color);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contacts-link:is(:hover, :focus) {
+  color: var(--accent-button);
+}
+.contacts-number {
+  margin-right: 40px;
+}
+
 /* ---------------footer------------- */
 
 .footer {
@@ -125,6 +128,8 @@ body {
 .footer-content {
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -147,13 +152,16 @@ body {
 /* --------------- gallery ----------- */
 
 .portfolio {
-  padding-top: 168px;
   padding-bottom: 120px;
 }
 .filter-list {
   list-style: none;
   text-decoration: none;
   display: flex;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
 }
 .filter-btn {
   font-family: "Roboto", sans-serif;
@@ -175,6 +183,13 @@ body {
 .gallery-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery-item {
+  display: flex;
+
+  border: 1px solid #e7e9fc;
 }
 .gallery-title {
   font-weight: 500;
@@ -189,25 +204,31 @@ body {
   letter-spacing: 0.02em;
   color: var(--contacts-color);
 }
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 16px;
+  gap: 8px;
+}
 
 /* -------------------------- Hero ------------------------------------ */
 
 .hero {
   background-color: var(--footer-nav-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-special-light);
-  max-width: 494px;
-  margin-bottom: 48px;
+  width: 496px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -233,13 +254,10 @@ body {
 
 /* ---------- features -------------- */
 
-.features {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .features-list {
   display: flex;
   justify-content: space-between;
+  gap: 8px;
 }
 .features-item {
   list-style: none;
@@ -260,9 +278,7 @@ body {
 }
 
 /* ------------ services ----------- */
-.services {
-  padding-bottom: 120px;
-}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -276,6 +292,7 @@ body {
   list-style: none;
   text-decoration: none;
   display: flex;
+  object-fit: contain;
   justify-content: space-between;
 }
 
@@ -283,7 +300,6 @@ body {
 
 .team {
   background: var(--secondary-bg-color);
-  padding-bottom: 120px;
 }
 .team-list {
   text-decoration: none;
@@ -298,8 +314,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--footer-nav-color);
   margin-bottom: 8px;
+  text-align: center;
 }
 .team-prof {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
